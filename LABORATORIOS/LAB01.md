@@ -119,3 +119,4 @@ Y así protegimos nuestra rama principal, esto se vuelve muy relevante cuando tr
 - En un README.md colocar lo siguiente:
 - Una sección llamada “INTEGRANTES” y allí colocar el listado de los integrantes del taller (máximo 2).
 - Una sección llamada “RESPUESTAS” colocar las respuestas a las preguntas.
+- La entrega deberá realizarla en Moodle en el espacio correspondiente a su grupo.
