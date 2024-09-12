@@ -70,18 +70,18 @@ El proyecto consiste en una aplicación de gestión de tareas personales donde l
 De aceurdo a la planeación realizada divida las tareas de implementación.
 A continuación detallamos diferentes tutoriales para el manejo técnico para cada etapa.
 
-  1- Creación de proyecto APIREST <a href="https://blog.codmind.com/mi-primer-api-rest-con-spring-boot/">Documentación 1<a/> <a href="https://programandoenjava.com/crear-un-rest-api-con-spring-boot/">Documentación 2</a>
-  2- Consumir APIREST HTML - JAVASCRIPT <a href="https://helpcenter.itmplatform.com/es/project/ejemplo-de-uso-de-api-con-html-javascript/">Ejemplo básico<a/> Utilizar buenas prácticas de programación separación en archivos emplear CSS para mejorar la usabilidad.
-  3- Configuración e integración <a href="https://www.mongodb.com/resources/products/compatibilities/spring-boot#getting-started-with-spring-initializr">MongoDB - Atlas</a> 
-  4- Utilizar integración con Sonar y JACOCO para análisis estático y calidad del código, esto implica el desarrollo de pruebas unitarias.
+  1. Creación de proyecto APIREST <a href="https://blog.codmind.com/mi-primer-api-rest-con-spring-boot/">Documentación 1<a/> <a href="https://programandoenjava.com/crear-un-rest-api-con-spring-boot/">Documentación 2</a>
+  2. Consumir APIREST HTML - JAVASCRIPT <a href="https://helpcenter.itmplatform.com/es/project/ejemplo-de-uso-de-api-con-html-javascript/">Ejemplo básico<a/> Utilizar buenas prácticas de programación separación en archivos emplear CSS para mejorar la usabilidad.
+  3. Configuración e integración <a href="https://www.mongodb.com/resources/products/compatibilities/spring-boot#getting-started-with-spring-initializr">MongoDB - Atlas</a>
+  4. Utilizar integración con Sonar y JACOCO para análisis estático y calidad del código, esto implica el desarrollo de pruebas unitarias.
 
-##GUIA DE ENTREGA Y PRESENTACIÓN
-  1- Deben conformar grupos de 4 personas.
-  2- El laboratorio se realizará en 2 partes.
-  3- Cada estudiante deberá participar en el desarrollo. (Se verá reflejado en los repositorios y en el tablero del proyecto)
-  4- Una vez que una caracteristica se encuentra finalizada los merge se validarán mediante pull request.
-  5- Deben integrar al equipo al profesor y monitor (Usuarios con cuenta institucional de la escuela)
-  6-En el readme deberán generar toda la documentación del proyecto tanto en back como en front.
-  7-Fecha de entrega en la semana 7.
+## GUIA DE ENTREGA Y PRESENTACIÓN
+  1. Deben conformar grupos de 4 personas.
+  2. El laboratorio se realizará en 2 partes.
+  3. Cada estudiante deberá participar en el desarrollo. (Se verá reflejado en los repositorios y en el tablero del proyecto)
+  4. Una vez que una caracteristica se encuentra finalizada los merge se validarán mediante pull request.
+  5. Deben integrar al equipo al profesor y monitor (Usuarios con cuenta institucional de la escuela)
+  6. En el readme deberán generar toda la documentación del proyecto tanto en back como en front.
+  7. Fecha de entrega en la semana 7.
 
 
