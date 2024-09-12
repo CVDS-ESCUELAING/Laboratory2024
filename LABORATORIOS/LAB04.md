@@ -25,7 +25,7 @@ El proyecto consiste en una aplicación de gestión de tareas personales donde l
 - El usuario debe poder eliminar tareas.
 
 ## ÉPICAS
-1. Gestión de Tareas: Permitir a los usuarios la creación, actualización, y eliminación de tareas mediante una interfaz web.
+1. Gestión de Tareas: Permitir a los usuarios la creación, actualización, y eliminación de tareas mediante una interfaz web. Puede definir épicas para front y para back.
 
 ## SPRINTS
 1. Sprint 1: Configuración general del proyecto (Configuración de ambientes, scaffolding, configuración de las bases de datos)
@@ -41,6 +41,34 @@ El proyecto consiste en una aplicación de gestión de tareas personales donde l
 ## MODELO DE ARQUITECTURA
 
 ![Screenshot_2](assets/TareasArquitectura.drawio.png)
+
+## PASOS PARA CONSTRUIR EL PROYECTO
+
+1- Cree un proyecto en GitHub para el back y para el front de manera independiente puede utilizar la siguiente guía para definir el scaffolding del back <a href="https://ragunathrajasekaran.medium.com/https-medium-com-ragunathrajasekaran-lets-learn-full-stack-development-part2-7986debc485d" target="_blank">Ver guía</a> No olvide el que el proyecto debe ser maven. Mantenga el esquema de nombramiento de los artefactos.
+
+## PLANEACIÓN DEL PROYECTO.
+- Esta sección tiene como objetivo realizar toda la planificación que el equipo de desarrollo requiere para poder dar inicio al proyecto planteado. Para este objetivo utilizaremos Azure DevOps.
+
+  1. Cree una cuenta en azureDevOps (Utilice el correo de la escuela) <a href="https://go.microsoft.com/fwlink/?LinkId=2014881" target="_blank">Crear una cuenta</a>
+  2. Una vez ingresa deberá crear el proyecto. (Este proceso solo lo realiza un miembro del grupo) Debe seleccionar en configuración avanzada tipo de proceso Scrum.
+  3. Cree un equipo en el siguiente tutorial encontrará cómo hacerlo <a href="https://github.com/microsoft/azuredevopslabs/tree/master/labs/azuredevops/agile" target="_blank">Creando equipos</a>, para este proceso todos 
+     los integrantes deberán tener una cuenta en AzureDevOps.
+  4. Integre los repositorios de gitHub en la configuración de AzureDevOps
+       From your project in Azure DevOps, go to Project settings > GitHub connections.
+       To add or remove repositories, select the More options ellipses for the connection and choose Add repositories or Remove repositories from the menu. 
+  5. Definiendo la épica:
+     1- En la sección de Board --> Work Items --> new work item --> Epic --> complete la información de la épica incluyendo la descripción.
+  6. Añada los features a la épica previamente debe conectar su repo de GITHUB
+  7.  Defina las historias de usuario por cada feature definida.
+ 
+
+## Implementación.
+De aceurdo a la planeación realizada divida las tareas de implementación.
+A continuación detallamos diferentes tutoriales para el manejo técnico para cada etapa.
+
+1-Creación de proyecto APIREST <a href="https://blog.codmind.com/mi-primer-api-rest-con-spring-boot/">Documentación 1<a/> <a href="https://programandoenjava.com/crear-un-rest-api-con-spring-boot/">Documentación 2</a>
+2-Consumir APIREST HTML - JAVASCRIPT <a href="https://helpcenter.itmplatform.com/es/project/ejemplo-de-uso-de-api-con-html-javascript/">Ejemplo básico<a/> Utilizar buenas prácticas de programación separación en archivos emplear CSS para mejorar la usabilidad.
+3-Configuración e integración <a href="https://www.mongodb.com/resources/products/compatibilities/spring-boot#getting-started-with-spring-initializr">MongoDB - Atlas</a> 
 
 
 
