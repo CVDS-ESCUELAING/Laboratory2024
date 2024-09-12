@@ -59,11 +59,12 @@ El proyecto consiste en una aplicación de gestión de tareas personales donde l
      los integrantes deberán tener una cuenta en AzureDevOps.
   4. Integre los repositorios de gitHub en la configuración de AzureDevOps
        From your project in Azure DevOps, go to Project settings > GitHub connections.
-       To add or remove repositories, select the More options ellipses for the connection and choose Add repositories or Remove repositories from the menu. 
-  5. Definiendo la épica:
+       To add or remove repositories, select the More options ellipses for the connection and choose Add repositories or Remove repositories from the menu.
+  5. Defina los spring del proyecto.
+  6. Definiendo la épica:
      1- En la sección de Board --> Work Items --> new work item --> Epic --> complete la información de la épica incluyendo la descripción.
-  6. Añada los features a la épica previamente debe conectar su repo de GITHUB
-  7.  Defina las historias de usuario por cada feature definida.
+  7. Añada los features a la épica previamente debe conectar su repo de GITHUB
+  8.  Defina las historias de usuario por cada feature definida.
  
 
 ## IMPLEMENTACIÓN.
