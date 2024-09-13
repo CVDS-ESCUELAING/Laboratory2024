@@ -67,6 +67,7 @@ El proyecto consiste en una aplicación de gestión de tareas personales donde l
      1- En la sección de Board --> Work Items --> new work item --> Epic --> complete la información de la épica incluyendo la descripción.
   7. Añada los features a la épica previamente debe conectar su repo de GITHUB
   8.  Defina las historias de usuario por cada feature definida.
+  9.  Defina las tareas asociadas a cada historia de usuario. Estime tiempos y programe cada actividad con su equipo (squad)
  
 
 ## IMPLEMENTACIÓN.
