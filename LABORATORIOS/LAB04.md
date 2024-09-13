@@ -53,6 +53,8 @@ El proyecto consiste en una aplicación de gestión de tareas personales donde l
 ## PLANEACIÓN DEL PROYECTO.
 - Esta sección tiene como objetivo realizar toda la planificación que el equipo de desarrollo requiere para poder dar inicio al proyecto planteado. Para este objetivo utilizaremos Azure DevOps.
 
+- <a href="AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M01_L01_Agile_Plan_and_Portfolio_Management_with_Azure_Boards.md at master · MicrosoftLearning/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions · GitHub">Tutorial Completo</a>
+
   1. Cree una cuenta en azureDevOps (Utilice el correo de la escuela) <a href="https://go.microsoft.com/fwlink/?LinkId=2014881" target="_blank">Crear una cuenta</a>
   2. Una vez ingresa deberá crear el proyecto. (Este proceso solo lo realiza un miembro del grupo) Debe seleccionar en configuración avanzada tipo de proceso Scrum.
   3. Cree un equipo en el siguiente tutorial encontrará cómo hacerlo <a href="https://github.com/microsoft/azuredevopslabs/tree/master/labs/azuredevops/agile" target="_blank">Creando equipos</a>, para este proceso todos 
