@@ -9,14 +9,14 @@ Usando el mismo código del proyecto realizado en el laboratorio 4 (generar un r
 - **test**: realizar la fase de *verify* y responder ¿se puede lograr que se ejecute sin necesidad de compilar el proyecto?, es dependiente (**needs**) de build para ser ejecutada, y a su vez es prerrequisito par hacer deploy.
 - **deploy**: por ahora deberá imprimir en consola "En construcción ...", necesita (**needs**) que se haya ejecutado **test** antes de iniciar.
 3) Agregar los siguientes tests
-- Dado que tengo 1 empleado registrado, Cuando lo consulto a nivel de servicio, Entonces la consulta será exitosa validando el campo id.
-- Dado que no hay ningún empleado registrado, Cuándo lo consulto a nivel de servicio, Entonces la consulta no retornará ningún resultado.
-- Dado que no hay ningún empleado registrado, Cuándo lo creo a nivel de servicio, Entonces la creación será exitosa.
-- Dado que tengo 1 empleado registrado, Cuándo lo elimino a nivel de servicio, Entonces la eliminación será exitosa.
-- Dado que tengo 1 empleado registrado, Cuándo lo elimino y consulto a nivel de servicio, Entonces el resultado de la consulta no retornará ningún resultado.
+- Dado que tengo 1 tarea registrada, Cuando lo consulto a nivel de servicio, Entonces la consulta será exitosa validando el campo id.
+- Dado que no hay ninguna tarea registrada, Cuándo la consulto a nivel de servicio, Entonces la consulta no retornará ningún resultado.
+- Dado que no hay ninguna tarea registrada, Cuándo lo creo a nivel de servicio, Entonces la creación será exitosa.
+- Dado que tengo 1 tarea registrada, Cuándo la elimino a nivel de servicio, Entonces la eliminación será exitosa.
+- Dado que tengo 1 tarea registrada, Cuándo la elimino y consulto a nivel de servicio, Entonces el resultado de la consulta no retornará ningún resultado.
 4) Verifica que la ejecución del **workflow** es exitosa, si no lo fuera, modifícalo hasta que ocurra
 ### Desplegando en Azure usando CI/CD (Continous Deployment / Continous Delivery)
-5) En Azure crea un servicio de App Service con recursos que facturen 0 dólares
+5) En Azure crea un servicio de App Service con recursos que facturen 0 dólares <a href="https://youtu.be/Z4LXJG2CVSw?si=xSsNIOEiL2aNfgvK">(TUTORIAL MINUTO 4:34)</a>
 6) Configura el **job deploy** que creaste en el paso 2 y usando el *action* **azure/webapps-deploy@v2** despliega el *jar* generado a tu servicio de App Service
 7) Verifica qué el endpoint de la aplicación generado en App Service
 8) En este punto la aplicación no debería funcionar, ¿Donde puedes ver el mensaje de error de la aplicación o logs?, (probáblemente está fallando debido a que el puerto usado para despliegue no es el esperado (puerto 80), modifícalo en el **application.properties**)
@@ -27,19 +27,19 @@ Usando el mismo código del proyecto realizado en el laboratorio 4 (generar un r
 ## PARTE II. GRÁFICOS
 ### Generación de datos por procedimientos
 Sobre el mismo proyecto del punto anterior:
-1) Agrega dos nuevos campos, *empresa* y *sexo biológico* a la entidad *empleado* existente, esta nueva entidad también tendrá su propio modelo y repositorio.
-2) Genera "proceduralmente" nuevos empleados, aleatoriamente serán entre 50 y 100. No se necesita crear ningún tipo de interfaz gráfica para poder llenarla, esta parte de la lógica pertenece al dominio de la capa de servicio.
+1) Agrega dos nuevos campos, *nivel de dificultad (Alto, medio, Bajo)* y *prioridad(de 1 a 5) donde 1 es baja prioridad y 5 alta* y tiempo promedio de desarrollo a la entidad *Terea* existente, esta nueva entidad también tendrá su propio modelo y repositorio.
+2) Genera "proceduralmente" nuevas tareas, aleatoriamente serán entre 100 y 1000. No se necesita crear ningún tipo de interfaz gráfica para poder llenarla, esta parte de la lógica pertenece al dominio de la capa de servicio.
 Recuerde la estructura:
 ![image](https://github.com/PDSW-ECI/labs/assets/4140058/18de025e-cf76-4deb-9fc2-19c763e473d8)
 3) Escoje entre algunas de las bibliotecas de gráficos en javascript y sustente su decisión, algunas que podría considerar son: [d3.js](https://d3js.org/), [c3.js](https://c3js.org/), [chart.js](https://www.chartjs.org/), [Google Charts](https://developers.google.com/chart), entre otras, para sustentar apoyese de instrumentos como las tabla T "pros y cons".
 4) Realiza una página nueva en la estructura, esta página será la de "analítica" o "insights", en está página se podrá seleccionar entre las siguientes gráficas:
-- Histograma de Salario
-- Número de empleados por empresa
-- Salario promedio por empresa
-- Gastos en salario de las empresas registras en el sistema
-- Persona por sexo en la base de datos
+- Histograma de Dificultad
+- Número de tareas finalizadas por tiempo
+- Promedios de tareas por prioridad
+- Tiempo total invertido por tareas realizadas.
 > Todas estas gráficas deberán ser debidamente rotuladas con su título, leyenda, etiquetas de ejes con sus unidades y tooltip sobre la serie de datos. Puede escoger entre gráficos de barras, líneas, pie, y sustente su elección.
 
 ## ENTREGA
+-Deben ajustar las nuevas tereas en su planing de Azure DevOps
 - CI/CD: La URL pública de la aplicación hasta la parte I, debe ser mostrada en el laboratorio, el profesor dará visto bueno sobre el README.md del repositorio.
-- DATA: URL del repositorio en github funcionando con una base de datos local.
+- DATA: URL del repositorio en github funcionando con Mongo.
