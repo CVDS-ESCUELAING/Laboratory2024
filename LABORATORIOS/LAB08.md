@@ -1,4 +1,4 @@
-# LABORATORIO 7 - Seguridad
+# LABORATORIO 8 - Seguridad
 
 ## PARTE I. Spring Security
 
