@@ -19,28 +19,43 @@
 8. Integrar pruebas unitarias en el desarrollo del producto.
 
 
-## CASO DE NEGOCIO - ADMINISTRADOR DE TAREAS.
+## CASO DE NEGOCIO - SISTEMA DE RESERVAS DE SALONES PARA LA UNIVERSIDAD ESCUELA COLOMBIANA DE INGENIERÍA JULIO GARAVITO.
 
-El proyecto consiste en una aplicación de gestión de tareas personales donde los usuarios podrán agregar, marcar como completadas, y eliminar tareas. La aplicación contará con una interfaz web y se conectará a un API REST desarrollado en Spring Boot. El backend permitirá la inyección de dependencias para el manejo de datos, pudiendo optar entre una base de datos en MongoDB Cloud o un archivo de texto plano para almacenar las tareas.
+El proyecto consiste en una aplicación para la gestión de reservas de salones dentro de la Escuela Colombiana de Ingeniería Julio Garavito. Los usuarios podrán consultar la disponibilidad de salones, realizar reservas y cancelar sus reservas desde una interfaz web. La aplicación se conectará a un API REST desarrollado en Spring Boot. El backend permitirá la inyección de dependencias para el manejo de datos, pudiendo optar entre una base de datos en MongoDB Cloud o un archivo de texto plano para almacenar las reservas.
 
 ## REQUERIMIENTOS
-- El usuario debe poder agregar tareas con una descripción.
-- El usuario debe poder marcar tareas como completadas.
-- El usuario debe poder eliminar tareas.
+- El usuario debe poder consultar la disponibilidad de salones.
+- El usuario debe poder reservar un salón especificando fecha, hora y propósito.
+- El usuario debe poder cancelar sus reservas.
+- La aplicación debe validar que un salón no se pueda reservar si ya está ocupado.
 
 ## ÉPICAS
-1. Gestión de Tareas: Permitir a los usuarios la creación, actualización, y eliminación de tareas mediante una interfaz web. Puede definir épicas para front y para back.
+1. Frontend: Crear una interfaz de usuario que permita visualizar la disponibilidad y gestionar reservas.
+2. Backend: Implementar un API REST para el manejo de la lógica de negocio y persistencia de datos.
 
 ## SPRINTS
-1. Sprint 1: Configuración general del proyecto (Configuración de ambientes, scaffolding, configuración de las bases de datos)
-2. Sprint 2: Implementación del API REST con opciones de persistencia en MongoDB Cloud o archivo de texto plano.
-3. Sprint 3: Conexión del front-end con la API y pruebas finales.
+Sprint 1: Configuración General del Proyecto
+  - Configuración de ambientes (backend y frontend).
+  - Scaffolding del proyecto.
+  - Configuración de la base de datos (MongoDB Cloud o archivo de texto plano).
+  - Definición del modelo de datos (salones y reservas).
+
+Sprint 2: Implementación del API REST
+  - Crear los endpoints necesarios para consultar salones, realizar reservas y cancelar reservas.
+  - Implementar la lógica de validación para evitar reservas conflictivas.
+  - Configurar la persistencia de datos en MongoDB Cloud o archivo de texto plano.
+
+Sprint 3: Conexión del Frontend con el API y Pruebas Finales
+  - Desarrollar la interfaz web para visualizar disponibilidad y gestionar reservas.
+  - Conectar la interfaz web con el API REST.
+  - Realizar pruebas de integración y validación de funcionalidades.
 
 ## FEATURES
-1. Crear una interfaz web que permita agregar tareas.
-2. Visualizar una lista de tareas.
-3. Marcar tareas como completadas.
-4. Eliminar tareas de la lista.
+  1. Consultar Disponibilidad: El usuario puede consultar la disponibilidad de salones para una fecha y hora específicas.
+  2. Reservar Salón: El usuario puede reservar un salón seleccionando fecha, hora y propósito.
+  3. Cancelar Reserva: El usuario puede cancelar sus reservas existentes.
+  4. Validación de Reservas: Evitar reservas duplicadas para un mismo salón, fecha y hora.
+  5. Notificación de Reserva Exitosa: Enviar una confirmación al usuario después de realizar la reserva.
 
 ## MODELO DE ARQUITECTURA
 
